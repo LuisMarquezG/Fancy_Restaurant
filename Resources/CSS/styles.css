@@ -1,0 +1,236 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*===============================================================================================================================================================*/
+
+
+header {
+  color: white;
+  
+  width: auto;
+  height: 550px;
+  background-image: url("/Users/luis/Documents/Devprojects/Fancy Restaurant/Resources/Images/head_background.jpg");
+  background-position: center;
+  background-size: cover;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a:hover {
+  color:white;
+}
+
+.color-red {
+
+  color: red;
+}
+#logo{
+  position: absolute;
+  width: 200px;
+  padding: 16px 200px 15px 20px;
+  margin-left: 200px;
+  line-height: 70px;
+  font-weight: 600;
+  font-size: 20px;
+    
+
+}
+.wrap-menu {
+  position: relative; 
+}
+
+.menu {
+  overflow: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 500px;
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+
+.menu ul {
+  list-style: none;
+    padding: 0px;
+    margin: 0 0 0 130px;
+}
+
+.menu li {
+  float: left;
+  
+  
+}
+
+.menu a {
+  margin-left: 20px;
+  line-height: 70px;
+  text-align: right;
+  text-decoration: none;
+  color: white;
+}
+
+.by-phone, .on-line {
+  padding-left: 30px;
+  margin-left: 100px;
+  }
+
+  .on-line {
+    box-sizing: content-box;
+    background-color: red;
+    padding: 5px 10px 5px 10px;
+
+  }
+
+  .slogan{
+  position: absolute;
+  width: 200px;
+  inline-size: auto;
+  margin-left: 205px;
+  margin-top: 220px;
+  line-height: 70px;
+  font-weight: 600;
+  font-size: 15px;
+  
+  }
+
+  h1 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 205px;
+    margin-top: 240px;
+    line-height: 70px;
+    font-weight: 600;
+    font-size: 25px;
+    padding-top: 30px;
+
+  }
+
+
+  .button-2 {
+    border: solid white 1px;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px 7px 12px;
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 200px;
+}
+
+.story-head-1 {
+  position: absolute;
+  inline-size: auto;
+  margin-left: 205px;
+  margin-top: 50px;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  color: grey;
+}
+
+.story-head-2 {
+  position: absolute;
+  inline-size: auto;
+  padding-top: 10px;
+  margin-left: 205px;
+  margin-top: 80px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.story-content {
+  position: absolute;
+  inline-size: auto;
+  padding-top: 10px;
+  margin-left: 205px;
+  margin-top: 135px;
+  line-height: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  color: grey;
+}
+
+.smiling-chef {
+  float: right;
+  padding-top: 50px;
+ 
+
+}
+
