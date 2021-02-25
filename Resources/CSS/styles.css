@@ -79,29 +79,26 @@ select {
 
 /*===============================================================================================================================================================*/
 
-
 header {
   color: white;
-  
   width: auto;
   height: 550px;
-  background-image: url("/Users/luis/Documents/Devprojects/Fancy Restaurant/Resources/Images/head_background.jpg");
+  background-image: url("../Images/head_background.jpg");
   background-position: center;
   background-size: cover;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a:hover {
-  color:white;
+  color: white;
 }
 
 .color-red {
-
   color: red;
 }
-#logo{
+#logo {
   position: absolute;
   width: 200px;
   padding: 16px 200px 15px 20px;
@@ -109,34 +106,29 @@ a:hover {
   line-height: 70px;
   font-weight: 600;
   font-size: 20px;
-    
-
 }
 .wrap-menu {
-  position: relative; 
+  position: relative;
 }
 
 .menu {
   overflow: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 500px;
-    font-weight: 600;
-    font-size: 15px;
-    
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 500px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .menu ul {
   list-style: none;
-    padding: 0px;
-    margin: 0 0 0 130px;
+  padding: 0px;
+  margin: 0 0 0 130px;
 }
 
 .menu li {
   float: left;
-  
-  
 }
 
 .menu a {
@@ -147,19 +139,19 @@ a:hover {
   color: white;
 }
 
-.by-phone, .on-line {
+.by-phone,
+.on-line {
   padding-left: 30px;
   margin-left: 100px;
-  }
+}
 
-  .on-line {
-    box-sizing: content-box;
-    background-color: red;
-    padding: 5px 10px 5px 10px;
+.on-line {
+  box-sizing: content-box;
+  background-color: red;
+  padding: 5px 10px;
+}
 
-  }
-
-  .slogan{
+.slogan {
   position: absolute;
   width: 200px;
   inline-size: auto;
@@ -168,34 +160,38 @@ a:hover {
   line-height: 70px;
   font-weight: 600;
   font-size: 15px;
-  
-  }
+}
 
-  h1 {
-    position: absolute;
-    display: inline-block;
-    margin-left: 205px;
-    margin-top: 240px;
-    line-height: 70px;
-    font-weight: 600;
-    font-size: 25px;
-    padding-top: 30px;
+h1 {
+  position: absolute;
+  display: inline-block;
+  margin-left: 205px;
+  margin-top: 240px;
+  line-height: 70px;
+  font-weight: 600;
+  font-size: 25px;
+  padding-top: 30px;
+}
 
-  }
+.button-2 {
+  border: solid white 1px;
+  color: white;
+  text-decoration: none;
+  padding: 7px 12px 7px 12px;
+  position: absolute;
+  margin-top: 340px;
+  margin-left: 200px;
+}
 
+/*========================== Story section ========================== */
 
-  .button-2 {
-    border: solid white 1px;
-    color: white;
-    text-decoration: none;
-    padding: 7px 12px 7px 12px;
-    position: absolute;
-    margin-top: 340px;
-    margin-left: 200px;
+.our-story {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .story-head-1 {
-  position: absolute;
   inline-size: auto;
   margin-left: 205px;
   margin-top: 50px;
@@ -203,34 +199,250 @@ a:hover {
   font-weight: 600;
   font-size: 12px;
   color: grey;
+  align-self: flex-start;
 }
 
 .story-head-2 {
-  position: absolute;
   inline-size: auto;
   padding-top: 10px;
   margin-left: 205px;
-  margin-top: 80px;
+  margin-top: 6px;
   font-weight: 600;
   font-size: 25px;
+  align-self: flex-start;
 }
 
 .story-content {
-  position: absolute;
   inline-size: auto;
   padding-top: 10px;
   margin-left: 205px;
-  margin-top: 135px;
+  margin-top: 1px;
   line-height: 30px;
   font-weight: 600;
   font-size: 14px;
   color: grey;
+  align-self: flex-start;
 }
 
 .smiling-chef {
-  float: right;
+  margin-left: 300px;
+  display: inline;
   padding-top: 50px;
- 
-
 }
+
+/* =================    OUR CHEFS ======================== */
+
+.chefs {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(243, 240, 240);
+  margin-top: 50px;
+  display: grid;
+  grid-template: 10% 7.5% 7.5% 60% 5% 5% 10% / repeat(3, 1fr);
+  justify-items: center;
+}
+
+.chefs-head-1 {
+  font-size: 30px;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.chefs-head-2 {
+  color: grey;
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.img-petra {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.img-lindsay {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.img-kin {
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.managment {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.position {
+  color: grey;
+}
+
+.petra {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.lindsay {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.kin {
+  grid-area: 5 / 3 / 6 / 4;
+}
+
+.a {
+  align-self: center;
+  grid-area: 6 / 1 / 7 / 2;
+}
+
+.b {
+  align-self: center;
+  grid-area: 6 / 2 / 7 / 3;
+}
+
+.c {
+  align-self: center;
+  grid-area: 6 / 3 / 7 / 4;
+}
+
+/* ========= OUR MENUS ================= */
+
+.menus {
+  width: 100%;
+  height: 950px;
+  display: grid;
+  grid-template: 10% 5% 5% 40% 40% / repeat(3, 1fr);
+  justify-items: center;
+}
+
+.menus-head-1 {
+  font-size: 30px;
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.menus-p-1 {
+  color: grey;
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+.menu-1 {
+  grid-area: 4 / 1 / 5 / 2;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.menu-2 {
+  grid-area: 4 / 2 / 5 / 3;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.menu-3 {
+  grid-area: 4 / 3 / 5 / 4;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.menu-4 {
+  grid-area: 5 / 1 / 6 / 2;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.menu-5 {
+  grid-area: 5 / 2 / 6 / 3;
+  justify-self: stretch;
+  align-self: stretch;
+}
+.menu-6 {
+  grid-area: 5 / 3 / 6 / 4;
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+/* ================= TESTIMONIALS =========================== */
+
+.testimonials {
+  position: relative;
+  /* display: inline-block; */
+  text-align: center;
+  background-image: url("../Images/background_testimonials.jpg");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 550px;
+  color: white;
+}
+
+.testimonials-h-1 {
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+}
+
+.testimonials-q-1 {
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 19%;
+}
+
+.testimonials-p-1 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+}
+
+/* ============ FOOTER ============== */
+
+.footer {
+  width: 100%;
+  height: 500px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.map {
+  margin-left: 10%;
+}
+
+.contact-us {
+  margin-right: 15%;
+  background-color: rgb(243, 240, 240);
+  width: 500px;
+  height: 350px;
+}
+
+.contact-head-1 {
+  font-size: 20px;
+}
+.form {
+  border: 1px solid transparent;
+}
+.contact-head-1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form-list {
+   list-style: none;
+}
+
+.form-list li {
+  padding-bottom: 5px; 
+}
+
+.form-list li label {
+  width:120px;
+  float:left;
+  text-align:left;
+  
+}
+
+.send-message {
+  box-sizing: content-box;
+  background-color: red;
+  padding: 5px 162px;
+  color: white;
+  text-decoration: none;
+  
+}
+
 
